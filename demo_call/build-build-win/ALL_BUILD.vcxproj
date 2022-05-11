@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A29F58FD-D749-3D2B-AAFF-0251494629A7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\msys64\home\sxy\Github\dlib_learning\demo_call\build\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/msys64/home/sxy/Github/dlib_learning/demo_call/build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/msys64/home/sxy/Github/dlib_learning/demo_call/build -BC:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win --check-stamp-file C:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\qtcreator\package-manager\auto-setup.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-debug.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-release.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfig.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3Config.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-debug.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-release.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/msys64/home/sxy/Github/dlib_learning/demo_call/build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/msys64/home/sxy/Github/dlib_learning/demo_call/build -BC:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win --check-stamp-file C:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\qtcreator\package-manager\auto-setup.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-debug.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-release.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfig.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3Config.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-debug.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-release.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/msys64/home/sxy/Github/dlib_learning/demo_call/build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/msys64/home/sxy/Github/dlib_learning/demo_call/build -BC:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win --check-stamp-file C:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\qtcreator\package-manager\auto-setup.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-debug.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-release.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfig.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3Config.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-debug.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-release.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/msys64/home/sxy/Github/dlib_learning/demo_call/build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/msys64/home/sxy/Github/dlib_learning/demo_call/build -BC:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win --check-stamp-file C:/msys64/home/sxy/Github/dlib_learning/demo_call/build-build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\3.22.1\CMakeSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeDependentOption.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeFindDependencyMacro.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\qtcreator\package-manager\auto-setup.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-debug.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib-release.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlib.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfig.cmake;C:\vcpkg\installed\x64-windows\share\dlib\dlibConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3Config.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-debug.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends-release.cmake;C:\vcpkg\installed\x64-windows\share\fftw3\FFTW3LibraryDepends.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\ZERO_CHECK.vcxproj">
+      <Project>{10F1419F-8816-3653-B50A-CEC8E4024DC7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\msys64\home\sxy\Github\dlib_learning\demo_call\build-build-win\demo_vcpkg.vcxproj">
+      <Project>{B87B7406-3876-30B3-9297-A6A42377EAEC}</Project>
+      <Name>demo_vcpkg</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
