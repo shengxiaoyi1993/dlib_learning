@@ -3,7 +3,7 @@
 # 执行cmake时添加编译选项，-DCMAKE_TOOLCHAIN_FILE=C:\vcpkg\scripts\buildsystems\vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-windows
 
 cmake_policy(VERSION 3.6)
-project(demo_vcpkg VERSION 0.1)
+project(demo_vcpkg_dlib VERSION 0.1)
 cmake_minimum_required(VERSION 3.6)
 
 set(CMAKE_CXX_STANDARD 11)
