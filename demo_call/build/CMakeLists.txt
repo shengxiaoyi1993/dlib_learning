@@ -109,7 +109,16 @@ ENDFOREACH(MYSUBLIB)
 message("OpenCV_LIBS:" ${OpenCV_LIBS})
 
 add_executable (${PROJECT_NAME}
-  ../src/main.cpp
+#  ../src/main.cpp
+#机器学习方法解决分配问题
+#../src/asign_learning.cpp
+# 借助输入输出流和dlib中的压缩/base编码组件进行编码
+#../src/file_to_code_ex.cpp
+#贝叶斯网络
+#../src/bayes_net_from_disk_ex.cpp
+#创建贝叶斯网络的工具
+#../src/bayes_net_gui_ex.cpp
+../src/bayes_net_ex.cpp
   )
 
 # 本项目链接相应的库
