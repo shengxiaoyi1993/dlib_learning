@@ -118,7 +118,11 @@ add_executable (${PROJECT_NAME}
 #../src/bayes_net_from_disk_ex.cpp
 #创建贝叶斯网络的工具
 #../src/bayes_net_gui_ex.cpp
-../src/bayes_net_ex.cpp
+# 贝叶斯网络的简单例子
+#../src/bayes_net_ex.cpp
+../src/image_ex.cpp
+
+
   )
 
 # 本项目链接相应的库

@@ -73,6 +73,8 @@ int main()
         directed_graph<bayes_node>::kernel_1a_c bn;
 
         ///贝叶斯网络在dlib中可以表现为包含若干个贝叶斯节点的有向图
+        /// 节点表示某一事件（包含是否法生的概率），箭头表示影响关系
+        /// 如b/c都会影响A,而D只受A的直接影响
 
         // Use an enum to make some more readable names for our nodes.
         enum nodes
@@ -205,6 +207,7 @@ int main()
         cout << "\n\n\n";
 
 
+        /// 设置某一事件发生时，计算其他事件发生的概率。这里设置C发生
         // Now to make things more interesting let's say that we have discovered that the C 
         // node really has a value of 1.  That is to say, we now have evidence that 
         // C is 1.  We can represent this in the network using the following two function
@@ -216,6 +219,7 @@ int main()
         // given that we now know that C is 1.  We can do this as follows:
         bayesian_network_join_tree solution_with_evidence(bn, join_tree);
 
+        /// C发生时各个事件发生的概率
         // now print out the probabilities for each node
         cout << "Using the join tree algorithm:\n";
         cout << "p(A=1 | C=1) = " << solution_with_evidence.probability(A)(1) << endl;
@@ -236,6 +240,7 @@ int main()
         // all we did was change the value of a bayes_node object (we made node C be evidence)
         // so we are ok.
 
+        ///只能在未改变树结构时重用该网络。否则需要重新计算
 
 
 
@@ -252,15 +257,23 @@ int main()
         // of the conditional probability tables in the bayesian network have a probability
         // of 1.0 for something the gibbs sampler should not be used.
 
+        ///下面使用贝叶斯网络gibbs抽样做近似推理
+        /// 连接树算法可能消耗指数时间，因此估计在某些情景下是必要的
+        /// gibbs抽样无法在网络中包含确定的节点时工作
 
         // This Gibbs sampler algorithm works by randomly sampling possibles values of the
-        // network.  So to use it we should set the network to some initial state.  
+        // network.  So to use it we should set the network to some initial state.
+
+        /// gibbs算法使用随机取值来工作
+        /// 因此网络需要进行初始化
 
         set_node_value(bn, A, 0);
         set_node_value(bn, B, 0);
         set_node_value(bn, D, 0);
 
-        // We will leave the C node with a value of 1 and keep it as an evidence node.  
+        // We will leave the C node with a value of 1 and keep it as an evidence node.
+
+        ///C被设置为假设发生条件 set_node_as_evidence
 
 
         // First create an instance of the gibbs sampler object
@@ -270,7 +283,9 @@ int main()
         // To use this algorithm all we do is go into a loop for a certain number of times
         // and each time through we sample the bayesian network.  Then we count how 
         // many times a node has a certain state.  Then the probability of that node
-        // having that state is just its count/total times through the loop. 
+        // having that state is just its count/total times through the loop.
+
+        /// 我们执行一定的循环，然后进行取样。节点的概率可以用发生的频率进行估计
 
         // The following code illustrates the general procedure.
         unsigned long A_count = 0;
