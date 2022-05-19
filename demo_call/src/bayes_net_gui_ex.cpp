@@ -50,6 +50,11 @@ typedef graph<dlib::set<unsigned long>::compare_1b_c, dlib::set<unsigned long>::
 
 //  ----------------------------------------------------------------------------
 
+/// 该对象启动时创建一个空的贝叶斯网络
+/// 创建有向图
+/// 为每个节点设置条件概率表
+/// 计算每个点的后验概率
+/// 从文件导入和导出网络
 class main_window : public drawable_window 
 {
     /*!
@@ -63,6 +68,7 @@ class main_window : public drawable_window
             posterior probability of each node.  And finally, it lets you save and load
             networks from file
     !*/
+
 public:
     main_window();
     ~main_window();

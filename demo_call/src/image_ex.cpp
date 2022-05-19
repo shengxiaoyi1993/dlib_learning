@@ -61,8 +61,9 @@ int main(int argc, char** argv)
 
         // now we do the non-maximum edge suppression step so that our edges are nice and thin
         /// 非极大值抑制：获取局部最大值
-        suppress_non_maximum_edges(horz_gradient, vert_gradient, edge_image); 
+        suppress_non_maximum_edges(horz_gradient, vert_gradient, edge_image);
 
+        /// 显示窗口具有缩放/拖动功能
         // Now we would like to see what our images look like.  So let's use a 
         // window to display them on the screen.  (Note that you can zoom into 
         // the window by holding CTRL and scrolling the mouse wheel)

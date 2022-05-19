@@ -116,12 +116,21 @@ add_executable (${PROJECT_NAME}
 #../src/file_to_code_ex.cpp
 #贝叶斯网络
 #../src/bayes_net_from_disk_ex.cpp
-#创建贝叶斯网络的工具
+#创建贝叶斯网络的工具 x
 #../src/bayes_net_gui_ex.cpp
 # 贝叶斯网络的简单例子
 #../src/bayes_net_ex.cpp
-../src/image_ex.cpp
+# 显示图片/横向，纵向梯度的范例
+#../src/image_ex.cpp
+# 构造窗口和可移动对象的简单方法
+#../src/gui_api_ex.cpp
 
+# 使用管道进行线程间数据传输
+#../src/pipe_ex_2.cpp
+# 用桥来实现服务器和客户端，利用pipe管道传输数据结构
+#../src/bridge_ex.cpp
+
+../src/bsp_ex.cpp
 
   )
 
