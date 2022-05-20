@@ -129,8 +129,17 @@ add_executable (${PROJECT_NAME}
 #../src/pipe_ex_2.cpp
 # 用桥来实现服务器和客户端，利用pipe管道传输数据结构
 #../src/bridge_ex.cpp
+# 介绍同步并行计算模型的简单实用，基于dlib::bsp
+#../src/bsp_ex.cpp
 
-../src/bsp_ex.cpp
+# 演示一个命令行参数解析工具的使用，和文件压缩和解压缩功能
+#../src/compress_stream_ex.cpp
+# config文件读取工具 键值对，用{}分级
+#../src/config_reader_ex.cpp
+# 多类别分类器的训练和使用，基于二元分类（rbf）,向量机和多项式
+#../src/multiclass_classification_ex.cpp
+
+../src/custom_trainer_ex.cpp
 
   )
 
