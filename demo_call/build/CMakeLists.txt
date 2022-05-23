@@ -15,6 +15,9 @@ set(CMAKE_AUTOUIC ON)  #编译.ui程序相关
 SET(PATH_COM_REPO "/home/sxy/Work/com_repo/scripts/com_repo_init/../../" CACHE STRING "Some user-specified option")
 SET(PATH_COMPILER_SDX "" CACHE STRING "Some user-specified option")
 
+SET(DCMAKE_TOOLCHAIN_FILE "C:/Users/sxy/vcpkg/scripts/buildsystems/vcpkg.cmake")
+include("C:/Users/sxy/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
 
 #设置子项目，假设所有库都位于同一层级，且具有相同的文件结构
 
@@ -130,8 +133,15 @@ add_executable (${PROJECT_NAME}
 # 用桥来实现服务器和客户端，利用pipe管道传输数据结构
 #../src/bridge_ex.cpp
 
-../src/bsp_ex.cpp
+#../src/bsp_ex.cpp
+#用于显示某个文件下的文件和文件夹
+# ../src/dir_nav_ex.cpp
 
+../src/dnn_introduction_ex.cpp
+# ../src/dnn_introduction2_ex.cpp
+
+# ../src/dnn_face_recognition_ex.cpp
+# ../src/dnn_metric_learning_ex.cpp
   )
 
 # 本项目链接相应的库
