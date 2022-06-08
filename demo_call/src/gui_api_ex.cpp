@@ -22,7 +22,7 @@ using namespace dlib;
 
 //  ----------------------------------------------------------------------------
 
-/// draggable 可移动对象
+/// draggable 可移动对象    
 class color_box : public draggable 
 {
     /*

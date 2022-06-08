@@ -15,6 +15,9 @@ set(CMAKE_AUTOUIC ON)  #编译.ui程序相关
 SET(PATH_COM_REPO "/home/sxy/Work/com_repo/scripts/com_repo_init/../../" CACHE STRING "Some user-specified option")
 SET(PATH_COMPILER_SDX "" CACHE STRING "Some user-specified option")
 
+SET(DCMAKE_TOOLCHAIN_FILE "C:/Users/sxy/vcpkg/scripts/buildsystems/vcpkg.cmake")
+include("C:/Users/sxy/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
 
 #设置子项目，假设所有库都位于同一层级，且具有相同的文件结构
 
@@ -132,6 +135,7 @@ add_executable (${PROJECT_NAME}
 # 介绍同步并行计算模型的简单实用，基于dlib::bsp
 #../src/bsp_ex.cpp
 
+<<<<<<< HEAD
 # 演示一个命令行参数解析工具的使用，和文件压缩和解压缩功能
 #../src/compress_stream_ex.cpp
 # config文件读取工具 键值对，用{}分级
@@ -140,7 +144,17 @@ add_executable (${PROJECT_NAME}
 #../src/multiclass_classification_ex.cpp
 
 ../src/custom_trainer_ex.cpp
+=======
+#../src/bsp_ex.cpp
+#用于显示某个文件下的文件和文件夹
+# ../src/dir_nav_ex.cpp
 
+../src/dnn_introduction_ex.cpp
+# ../src/dnn_introduction2_ex.cpp
+>>>>>>> f3e0d52f4e010b61a5333b276ff245c7af81d520
+
+# ../src/dnn_face_recognition_ex.cpp
+# ../src/dnn_metric_learning_ex.cpp
   )
 
 # 本项目链接相应的库
