@@ -1,3 +1,0 @@
-C:/Users/sxy/github/dlib_learning/demo_call/build/CMakeFiles/demo_vcpkg_dlib.dir
-C:/Users/sxy/github/dlib_learning/demo_call/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/sxy/github/dlib_learning/demo_call/build/CMakeFiles/ZERO_CHECK.dir
