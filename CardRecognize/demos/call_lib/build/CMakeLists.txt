@@ -28,7 +28,7 @@ set(CMAKE_PREFIX_PATH  "${CMAKE_PREFIX_PATH};/home/sxy/Software/opencv-3.4.1/")
 
 # 位于<com_repo>/com_lib的库
 set(LIST_COM_LIB
-  #  cjsonobject
+    cjsonobject
   #  glog
   #  opencv_3_4_1
   )
@@ -45,6 +45,7 @@ set(LIST_PUBLIC_LIB
   #  msgchannel
   #  socket_channel
 #   toml
+StdUtility
   )
 
 # 本地的模块
